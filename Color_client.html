@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ColorScale Image Processing</title>
+</head>
+<body>
+	<form action="Color01_server.jsp" method="post"
+		enctype="multipart/form-data">
+
+		<p>
+			<select name="algo">
+				<option value="">--Algorithm--</option>
+				<option value="">**화소점 처리**</option>
+				<option value="101">동일 영상</option>
+				<option value="102">반전 영상</option>
+				<option value="103">밝게하기</option>
+				<option value="104">어둡게하기</option>
+				<option value="105">곱하기</option>
+				<option value="106">나누기</option>
+				<option value="107">흑백(127기준)</option>
+				<option value="108">흑백(평균기준)</option>
+				<option value="109">파라볼라(캡)</option>
+				<option value="110">파라볼라(컵)</option>
+				<option value="111">감마보정</option>
+				
+				<option value="">**기하학 처리**</option>
+				<option value="201">상하 미러링</option>
+				<option value="202">좌우 미러링</option>
+				<option value="203">축소하기</option>
+				<option value="204">확대하기</option>
+				<option value="205">이동하기</option>
+				<option value="206">회전하기</option>
+
+				<option value="">**화소영역 처리**</option>
+				<option value="301">엠보싱</option>
+				<option value="302">블러링</option>
+				<option value="303">가우시안 필터</option>
+				<option value="304">샤프닝</option>
+				<option value="305">고주파 필터 샤프닝</option>
+				<option value="306">저주파 필터 샤프닝</option>
+				<option value="307">경계선검출</option>
+				<option value="308">유사 연산자</option>
+				<option value="309">차 연산자</option>
+				<option value="310">LoG</option>
+				<option value="311">DoG</option>
+				<option value="312">라플라시안</option>
+				<option value="313">로버츠</option>
+				<option value="314">소벨</option>
+				<option value="315">프리윗</option>
+				
+				<option value="">**히스토그램 처리**</option>
+				<option value="401">스트래칭</option>
+				<option value="402">앤드-인</option>
+				<option value="403">평활화</option>
+			</select>
+		<p>
+			Parameter1 : <input type="text" value="0" name="para1">
+		<p>
+			Parameter2 : <input type="text" value="0" name="para2">
+		<p>
+			UploadFile : <input type="file" name="filename">;
+		<p>
+		<p>
+			<input type="submit" value="Processing!!">
+	</form>
+</body>
+</html>
